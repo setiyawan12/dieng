@@ -1,0 +1,141 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="user">Welcome {{username}}</div>
+    <ion-buttons slot="primary">
+      <ion-button (click)="proseslogout()"
+        ><ion-icon slot="end" name="log-out"></ion-icon
+      ></ion-button>
+    </ion-buttons>
+
+    <!-- <ion-buttons slot="primary" (click)="addCustomer()">
+      <ion-button color="tertiary" fill="outline">
+        New
+        <ion-icon slot="end" name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <ion-card>
+    <ion-card-header style="background-color: #ff397f">
+      <ion-card-subtitle style="color: white"
+        >Tagihan Anda Bulan</ion-card-subtitle
+      >
+      <ion-card-title style="color: white">Rp 360.000</ion-card-title>
+    </ion-card-header>
+    <ion-card-content
+      style="background-color: #ff397f; color: white; padding: 15px"
+    >
+      Bayar tagihan anda sebelum
+    </ion-card-content>
+  </ion-card>
+  <h4
+    style="
+      margin-left: 25px;
+      margin-bottom: -10px;
+      font-family: 'Nunito', sans-serif;
+      color: white;
+    "
+  >
+    Daftar Paket
+  </h4>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-align-self-start">
+        <ion-card class="crd">
+          <ion-card-content style="color: white">
+            <h1>10 mbps</h1>
+            <h4>Rp. 260.000</h4>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col class="ion-align-self-end">
+        <ion-card class="crd">
+          <ion-card-content style="color: white">
+            <h1>20 mbps</h1>
+            <h4>Rp. 360.000</h4>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col class="ion-align-self-start">
+        <ion-card class="crd">
+          <ion-card-content style="color: white">
+            <h1>10 mbps</h1>
+            <h4>Rp. 260.000</h4>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col class="ion-align-self-end">
+        <ion-card class="crd">
+          <ion-card-content style="color: white">
+            <h1>20 mbps</h1>
+            <h4>Rp. 360.000</h4>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col class="ion-align-self-start">
+        <ion-card class="crd">
+          <ion-card-content style="color: white">
+            <h1>10 mbps</h1>
+            <h4>Rp. 260.000</h4>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col class="ion-align-self-end">
+        <ion-card class="crd">
+          <ion-card-content style="color: white">
+            <h1>20 mbps</h1>
+            <h4>Rp. 360.000</h4>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!-- <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Refreshing..."
+    >
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let customer of customers">
+      <ion-item-options side="start">
+        <ion-item-option
+          color="danger"
+          (click)="delCustomer(customer.customer_id)"
+          >Delete</ion-item-option
+        >
+      </ion-item-options>
+
+      <ion-item>
+        <ion-label>{{customer.name_customer}}</ion-label>
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option
+          color="secondary"
+          (click)="showCustomer(customer.customer_id,customer.name_customer,customer.desc_customer)"
+          >Show</ion-item-option
+        >
+
+        <ion-item-option
+          (click)="updateCustomer(customer.customer_id,customer.name_customer,customer.desc_customer)"
+          >Update</ion-item-option
+        >
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+  <ion-infinite-scroll (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data..."
+    >
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll> -->
+</ion-content>
