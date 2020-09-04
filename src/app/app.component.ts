@@ -25,12 +25,12 @@ export class AppComponent {
   }
 
   initializeApp() {
-      this.platform.ready().then(() => {
+    this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
 
-      this.storage.get('session_storage').then((res) => {
+    this.storage.get('session_storage').then((res) => {
       if (res == null) {
         this.router.navigate(['/login']);
       } else {

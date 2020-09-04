@@ -1,10 +1,13 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title> Welcome {{username}} </ion-title>
+    <!-- <ion-title> Welcome {{username}} </ion-title> -->
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu" content-id="main"></ion-menu-button>
+    </ion-buttons>
     <ion-buttons slot="primary">
-      <ion-button (click)="proseslogout()"
-        ><ion-icon slot="end" name="log-out"></ion-icon
-      ></ion-button>
+      <ion-button (click)="proseslogout()"></ion-button>
+      <ion-icon slot="end" name="log-out"></ion-icon>
+    </ion-buttons>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
