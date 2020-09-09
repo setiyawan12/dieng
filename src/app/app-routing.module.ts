@@ -9,7 +9,6 @@ const routes: Routes = [
   { path: 'setting', loadChildren: './setting/setting.module#SettingPageModule' },
   { path: 'customer', loadChildren: './customer/customer.module#CustomerPageModule' },
   { path: 'addcustomer', loadChildren: './addcustomer/addcustomer.module#AddcustomerPageModule' },
-  { path: 'addcustomer/:id/:name/:desc', loadChildren: './addcustomer/addcustomer.module#AddcustomerPageModule' },
   { path: 'profile', loadChildren: './pages/profile/profile.module#ProfilePageModule' },
   { path: 'pengaduan', loadChildren: './pages/pengaduan/pengaduan.module#PengaduanPageModule' },
   { path: 'pengaturan', loadChildren: './pages/pengaturan/pengaturan.module#PengaturanPageModule' },
