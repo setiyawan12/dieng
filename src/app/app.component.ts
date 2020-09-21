@@ -34,7 +34,7 @@ export class AppComponent {
       if (res == null) {
         this.router.navigate(['/login']);
       } else {
-        this.router.navigate(['/customer']);
+        this.router.navigate(['/tabs']);
       }
     });
   }

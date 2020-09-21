@@ -1,0 +1,31 @@
+<ion-content class="background">
+
+  <ion-fab vertical="top" horizontal="start"  class="fab" >
+      <h2 >Pengaduan</h2>
+  </ion-fab>
+
+  <div style="margin-top: 20%">
+      <ion-list style="margin-left: 10px; margin-right: 10px; background: none;">
+  
+          <ion-item style="border-radius: 5px;">
+            <ion-label>Keluhan</ion-label>
+            <ion-select value="tdkstabil" okText="Lanjut" cancelText="Batal">
+              <ion-select-option value="tdkstabil">Tidak Stabil</ion-select-option>
+              <ion-select-option value="ping">Ping Besar</ion-select-option>
+              <ion-select-option value="mati">Internet Sering Mati</ion-select-option>
+              <ion-select-option value="lainnya">Lainnya</ion-select-option>
+            </ion-select>
+          </ion-item>
+        
+        </ion-list>
+  
+  
+  <ion-item style="margin-left: 10px; margin-right: 10px; margin-top: 10px; border-radius: 5px;" >
+      <ion-label position="floating">Lainnya</ion-label>
+      <ion-textarea rows="6" cols="20" placeholder="Laporkan keluhan anda..."></ion-textarea>
+    </ion-item>
+  
+    <ion-button class="actionbutton" expand="block" fill="clear" style="text-transform: none; float: right; margin-top: 40px; width: 30%;">Kirim</ion-button>
+  </div>
+
+</ion-content>

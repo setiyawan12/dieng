@@ -1,0 +1,27 @@
+<ion-content class="background">
+  
+
+  <ion-fab vertical="top" horizontal="start"  class="fab" >
+    <h2 >Pengaturan</h2>
+  </ion-fab>
+
+  <ion-card style="margin-top: 20%;" > 
+    <ion-item routerLink="/edit"  color="tertiary">
+      <ion-icon name="md-create"></ion-icon>
+      <ion-label>Ganti Pasword</ion-label>
+    </ion-item>  
+
+  <ion-item routerLink="/tentang" color="tertiary">
+    <ion-icon name="md-information-circle"></ion-icon>
+    <ion-label>Tentang</ion-label>
+  </ion-item>
+
+  <ion-item (click)="proseslogout()" color="tertiary">
+    <ion-icon name="md-exit"></ion-icon>
+    <ion-label>keluar</ion-label>
+  </ion-item>
+
+
+</ion-card>
+
+</ion-content>
